@@ -1,0 +1,29 @@
+{
+  "explorer.width": 30,
+  "explorer.icon.enableNerdfont": true,
+  "explorer.previewAction.onHover": false,
+  "explorer.keyMappings.global": {
+    "<cr>": ["expandable?", "expand", "open"],
+    "v": "open:vsplit"
+  },
+  "diagnostic.messageTarget": "float",
+  "diagnostic.checkCurrentLine": true,
+  "diagnostic.virtualText": true,
+  "diagnostic.virtualTextCurrentLineOnly": false,
+  "diagnostic.virtualTextPrefix": "<-",
+  "workspace.ignoredFolders": [
+  "$HOME",
+  "$HOME/.cargo/**",
+  "$HOME/.rustup/**"
+	],
+	"tsserver.log": "verbose",
+	"languageserver": {
+    "tsserver": {
+      "command": "tsserver",
+      "args": ["--stdio"],
+      "filetypes": ["javascript", "javascriptreact", "javascript.jsx", "typescript", "typescriptreact", "typescript.tsx"],
+      "trace.server": "off",
+      "rootPatterns": ["package.json", "tsconfig.json"]
+    }
+  }
+}
